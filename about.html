@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce | About Us</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<nav class="nav nav_top">
+    <div class = "logo">
+           <a href="index.html"><img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Voylla_Website_Logo.png/1200px-Voylla_Website_Logo.png" width="200"/>
+    </div>
+    <div class="nav_side">
+        <a href="about.html">About Us</a>
+        <a href="service.html">Services</a>
+        <a href="blog.html">Blogs</a>
+        <a href="contact.html">contact</a>
+        <a href=" ">Login/Register</a>
+    </div>
+</nav>
+<div class="about_us">
+    <h2>About Us</h2>
+    <div class="about_content">
+        <p>Simply put, a paragraph is a collection of sentences all related to a central topic, idea, or theme. Paragraphs act as structural tools for writers to organize their thoughts into an ideal progression, and they also help readers process those thoughts effortlessly. Imagine how much harder reading and writing would be if everything was just one long block of text.</p>
+    </div>
+    <hr>
+    <h2>Our Mission</h2>
+    <p>Simply put, a paragraph is a collection of sentences all related to a central topic, idea, or theme. Paragraphs act as structural tools for writers to organize their thoughts into an ideal progression, and they also help readers process those thoughts effortlessly. Imagine how much harder reading and writing would be if everything was just one long block of text.Simply put, a paragraph is a collection of sentences all related to a central topic, idea, or theme. Paragraphs act as structural tools for writers to organize their thoughts into an ideal progression, and they also help readers process those thoughts effortlessly. Imagine how much harder reading and writing would be if everything was just one long block of text.</p>
+</div>
+<div class="feed">
+    <h2>YOUR FEEDBACK</h2>
+    <div class="feed_form">
+        <form name="google-sheet" method="post">
+            <input type="text" name="Name" placeholder="Name"><br>
+            <input type="email" name="Email" placeholder="Email ID"><br>
+            <input type="number" name="Number" placeholder="Contact number"><br>
+            <textarea name="Review"placeholder="Write your review"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+<footer>
+    <div class="footer_logo">
+        <a href="index.html"><img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Voylla_Website_Logo.png/1200px-Voylla_Website_Logo.png" width="200"/>
+    </div>
+    <div class="pages">
+        <h3>Pages</h3>
+        <a href="">About Us</a>|
+        <a href="">Services</a>|
+        <a href="">Blogs</a>|
+        <a href="">Login</a>|
+        <a href="">Sign Up</a>
+    </div>
+    <div class="doc">
+        <h3>Documents</h3>
+        <a href="">Privacy Policy</a>|
+        <a href="">Terms of Use</a>|
+        <a href="">Refund Policy</a>
+    </div>
+    <div class="social_medias">
+        <h3>Follow Us</h3>
+        <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+    <div class="contact">
+        <h3>Contact Us</h3>
+        <a href=""></a>
+        <a href=""></a>
+        <a href=""></a>
+    </div>
+    <hr>
+    <p>copyright &copy; 2023 Jewellery Fashion. All rights reserved</p>
+</footer>
+<script type="text/javascript">
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx6okj7jO_YEl1Zh7e45TXc5vLlprlCAxxXs4A6zDQGoItXiEYbc5a4pPNo3SvaIZ30KQ/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListner('submit',e =>{
+        e.preventDefault()
+        fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for contacting us..! We will contact you soon......."))
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

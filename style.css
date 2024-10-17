@@ -1,0 +1,422 @@
+.nav{
+    background-color: white;
+    z-index: 9;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.nav_top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.logo{
+    float: left;
+    width: 60%;
+}
+.logo img{
+    padding: 10px;
+}
+.nav_side{
+    float: right;
+    width: 40%;
+    padding-top: 30px;
+}
+.nav_side a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: cosmic, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+.nav_side a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: all 1s ease;
+}
+.main{
+    background-image: url(https://t4.ftcdn.net/jpg/03/15/75/73/360_F_315757330_Zkush37QibcEPWsmqZaEed67sO1lNrJm.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80vh;
+}
+.main .main_content{
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.main .main_content h2{
+    color: royalblue;
+    font-size: 90px;
+    font-weight: bolder;
+    font-family: cursive;
+    text-align: center;
+}
+.main .main_content h4{
+    color: whitesmoke;
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: cursive;
+    text-align: center;
+}
+.product{
+    padding-bottom: 50px;
+}
+.product h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+}
+.product .product_container{
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.product .product_container .item{
+    width: 33.33%;
+    margin: 10px;
+    height: auto;
+}
+.product .product_container .item:hover{
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.product .product_container .item .item_img{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+.product .product_container .item .item_img img{
+    width: 100%;
+    height: 350px;
+}
+.product .product_container .item .item_content{
+    text-align: center;
+}
+.product .product_container .item .item_content h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: cursive;
+}
+.product .product_container .item .item_content a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #737175;
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.product .product_container .item .item_content a:hover{
+    background-color: black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}
+.product .product_btn{
+    text-align: center;
+    margin-top: 50px;   
+}
+.product .product_btn a{
+    text-decoration: none;
+    margin: 50px;
+    padding: 10px 20px;
+    background-color: #737175;
+    color: white;
+    font-family: cosmic, sans-serif;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.5s; 
+}
+.product .product_btn a:hover{
+    background-color: black;
+    color: orange;
+    border: none;
+    border-bottom: 4px solid orange;
+    transition: 0.5s;
+}
+.keypoint{
+    padding: 50px;
+}
+.keypoint h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.keypoint .key_container{
+    display: flex;
+}
+.keypoint .key_container .key_content{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+.keypoint .key_container .key_content li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid orange;
+    color: black;
+    text-align: left;
+    font-family: cursive;
+    box-shadow: 0px 3px 65px 0px rgba(0,0,0,.15);
+}
+.keypoint .key_container .key_img{
+    width: 40%;
+    float: right;
+    margin-left: 100px;
+}
+.keypoint .key_container .key_img img{
+    width: 100%;
+}
+.testing{
+    padding: 50px;
+}
+.testing h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px; 
+}
+.testing .testing_container{
+    margin-right: 10%;
+    margin-left: 10%;
+    text-align: center;
+}
+.testing .testing_container .carousel-inner{
+    background-color: white;
+    box-shadow: none;
+}
+.testing .testing_container .item{
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+}
+.testing .testing_container .item .item_img{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    overflow: hidden;
+}
+.testing .testing_container .item .item_img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 100px;
+}
+.testing .testing_container .item .item_content{
+    text-align: center;
+}
+.testing .testing_container .item .item_content h3{
+    padding: 10px;
+    font-size: 25px;
+    font-family: cursive;
+}
+.testing .testing_container .item .item_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cursive;
+}
+.team{
+    padding: 50px;
+}
+.team h2{
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px; 
+}
+.team .team_container{
+    display: flex;
+}
+.team .team_container .team_video{
+    width: 50%;
+    padding: 20px;
+}
+.team .team_container .team_video iframe{
+    width: 100%;
+
+}
+.team .team_container .team_content{
+    width: 30%;
+    padding: 20px;
+    margin-left: 50px;
+}
+.team .team_container .team_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cursive;
+}
+.feed{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg');
+    background-size: cover;
+}
+.feed h2{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.feed .feed_form{
+    text-align: center;
+
+}
+.feed .feed_form form{
+    padding: 20px;
+
+}
+.feed .feed_form form input{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form textarea{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.feed .feed_form form button{
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+}
+.about_us{
+    padding: 100px;
+}.about_us h2{
+    color: blueviolet;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.about_us p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    line-height: 30px;
+}
+.contact_container{
+    padding: 100px;
+
+}
+.contact_container h2{
+    color: blueviolet;
+    font-size: 35px;
+    text-align: center;
+    padding: 10px;
+}
+.contact_container .g_map{
+    border: 10px solid black;
+}
+.contact_container .conact_content{
+    padding: 20px;
+}
+.contact_container .conact_content p{
+    padding: 10px;
+    font-size: 15px;
+    font-family: cursive;
+    text-align: center;
+    line-height: 30px;
+}
+footer{
+    background-color: pink;
+    padding: 50px;
+}
+footer .pages{
+    text-align: center;
+}
+footer .pages h3{
+    color: palevioletred;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 5px;
+}
+footer .pages a{
+    text-decoration: none;
+    margin: 10px;
+    color: palevioletred;
+    font-size: 15px;
+    font-family: 15px;
+}
+footer .pages a:hover{
+    color: white;
+}
+footer .doc{
+    text-align: center;
+}
+footer .doc h3{
+    color: palevioletred;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 5px;
+}
+footer .doc a{
+    text-decoration: none;
+    margin: 10px;
+    color: palevioletred;
+    font-size: 15px;
+    font-family: 15px;
+}
+footer .doc a:hover{
+    color: white;
+}
+footer .social_medias{
+    text-align: center;
+}
+footer .social_medias h3{
+    color: palevioletred;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 5px;
+}
+footer .contact{
+    text-align: center;
+}
+footer .contact h3{
+    color: palevioletred;
+    font-size: 20px;
+    font-family: cursive;
+    padding: 5px;
+}
+footer .social_medias a{
+    text-decoration: none;
+    font-size: 30px;
+    color: palevioletred;
+    margin: 10px;
+}
+footer .social_medias a:hover{
+    color: white;
+}
+footer .contact a{
+    text-decoration: none;
+    font-size: 30px;
+    color: palevioletred;
+    margin: 10px;
+}
+footer .contact a:hover{
+    color: white;
+}
